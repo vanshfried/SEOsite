@@ -1,11 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics Lab – Home</title>
+
+    <!-- Basic SEO (minimal on purpose) -->
+    <meta
+      name="description"
+      content="Analytics practice site for GA4 and GTM testing."
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7S0DNG51VC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-7S0DNG51VC");
+    </script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" data-event="nav_click" data-nav-label="home">
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="services.html"
+              data-event="nav_click"
+              data-nav-label="services"
+            >
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="about.html" data-event="nav_click" data-nav-label="about">
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              data-event="nav_click"
+              data-nav-label="contact"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main>
+      <section class="hero">
+        <h1>Analytics Practice Lab</h1>
+        <p>This site exists purely to test GA4 & GTM implementations.</p>
+
+        <button
+          class="btn primary"
+          data-event="cta_click"
+          data-cta-text="hero_primary_cta"
+        >
+          Primary CTA
+        </button>
+
+        <button
+          class="btn secondary"
+          data-event="cta_click"
+          data-cta-text="hero_secondary_cta"
+        >
+          Secondary CTA
+        </button>
+      </section>
+
+      <!-- LINKS SECTION -->
+      <section class="links">
+        <h2>Test Links</h2>
+
+        <p>
+          <a
+            href="services.html"
+            data-event="cta_click"
+            data-cta-text="internal_services_link"
+          >
+            Go to Services
+          </a>
+        </p>
+
+        <p>
+          <a
+            href="https://www.google.com"
+            target="_blank"
+            rel="noopener"
+            data-event="cta_click"
+            data-cta-text="external_google_link"
+          >
+            External Link (Google)
+          </a>
+        </p>
+      </section>
+
+      <!-- BUTTON GRID -->
+      <section class="buttons">
+        <h2>Multiple Button Test</h2>
+
+        <button data-event="cta_click" data-cta-text="button_1">
+          Button 1
+        </button>
+
+        <button data-event="cta_click" data-cta-text="button_2">
+          Button 2
+        </button>
+
+        <button data-event="cta_click" data-cta-text="button_3">
+          Button 3
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Analytics Lab ©</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
