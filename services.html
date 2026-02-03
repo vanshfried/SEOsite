@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics Lab – Services</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-K5RJP3WD");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="description" content="Services page for analytics testing." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-K5RJP3WD"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" data-event="nav_click" data-nav-label="home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="services.html"
+              data-event="nav_click"
+              data-nav-label="services"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="about.html" data-event="nav_click" data-nav-label="about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              data-event="nav_click"
+              data-nav-label="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Services</h1>
+
+      <section>
+        <h2>Analytics Setup</h2>
+        <p>GA4 and GTM implementation practice.</p>
+        <button data-event="cta_click" data-cta-text="analytics_setup">
+          Learn More
+        </button>
+      </section>
+
+      <section>
+        <h2>Event Tracking</h2>
+        <p>Track clicks, scrolls, and forms.</p>
+        <button data-event="cta_click" data-cta-text="event_tracking">
+          Learn More
+        </button>
+      </section>
+
+      <section>
+        <h2>Debugging</h2>
+        <p>Identify and fix broken tracking.</p>
+        <button data-event="cta_click" data-cta-text="debugging">
+          Learn More
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Analytics Lab ©</p>
+    </footer>
+  </body>
+</html>
