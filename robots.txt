@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vanshfried.github.io/SEOsite/sitemap.xml
